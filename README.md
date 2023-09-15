@@ -32,8 +32,8 @@ Responsive:
 
 ### Links
 
-- Solution URL: [Repository](https://github.com/amoraleslandeo/Results-summary-component.github.io)
-- Live Site URL: [Web page](https://amoraleslandeo.github.io/Results-summary-component.github.io/)
+- Solution URL: [Repository](https://github.com/amoraleslandeo/Stats-preview-card-component.github.io)
+- Live Site URL: [Web page](https://amoraleslandeo.github.io/Stats-preview-card-component.github.io/)
 
 ## My process
 
@@ -45,19 +45,40 @@ Responsive:
 
 ### What I learned
 
-I learned this attribute to generate a gradient color
+I learned that this property contains a specific area, allowing it to be given attributes only in that space.
 ```css
-    background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%); 
+.banner {
+     position: relative;
 ```
 
-I learned this attribute to generate a sorround shadow for a border
+I learned how to place a color layer on top of a contained image. With this sequence of attributes.
 ```css
-    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+.mask_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #AB5CDB;
 ```
+
+I learned to blend a color layer with an image with these attributes. 
+```css
+img {
+    mix-blend-mode: multiply;
+    opacity: .7511;
+```
+
+I learned that this property allows you to crop content that is within a specific area of ​​an image with a background.
+```css
+    overflow: hidden;
+```
+
+In this project I learned to use the SASS language for CSS. This allows me to structure the tags and their properties in the same way as HTML. The advantages of this language are the similarity with HTML and also the lightness of the final file, which allows the code uploaded to the browser to be processed much faster.
 
 ## Author
 
-- Website - [Alejandro Morales Landeo](https://amoraleslandeo.github.io/personal-page.github.io/)
+- Website - [Alejandro Morales Landeo](https://github.com/amoraleslandeo/)
 - Frontend Mentor - [@amoraleslandeo](https://www.frontendmentor.io/profile/amoraleslandeo)
 
 
