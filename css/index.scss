@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+$body: #0A0C1C;
+$container: #1B1937;
+$general_font: #ffffff;
+$span: #AB5CDB;
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    background-color: $body;
+    color: $general_font;
+    margin: 0px;
+    height: 100%;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+
+        .container {
+            display: flex;
+            align-items: center;
+            width: 1110px;
+            border-radius: 8px;
+            background-color: $container;
+            box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.20);
+            margin: 177px 165px;
+            overflow: hidden;
+
+            .information {
+                padding: 71px 95px 59px 72px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                .title_paragraph {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    h1 {
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 44px;
+                        margin: 0px;
+
+                        span {
+                            color: $span;
+                        }
+                    }
+
+                    p {
+                        opacity: 0.75;
+                        margin: 0px;
+                        margin-right: 29px;
+                    }
+
+                }
+
+                .counters {
+                    display: flex;
+                    margin-right: 52px;
+                    justify-content: space-between;
+
+                    .number {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .name {
+                        font-family: 'Lexend Deca';
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        opacity: .6;
+                    }
+
+                }
+            }
+
+            .banner {
+                line-height: 0px;
+                position: relative;
+
+                .bg_image {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: #AB5CDB;
+                }
+
+                img {
+                    mix-blend-mode: multiply;
+                    opacity: .7511;
+                }
+
+            }
+        }
+
+
+    }
+
+}
